@@ -1,0 +1,9 @@
+<li class="ninja-selectable-item" ng-class=" {'ninja-item-horizontal':isItemHorizontal()} ">
+    <div class="ninja-noselect">
+        <!--<i class="fa  {{icon}} ninja-menu-icon"></i>-->
+        <strong>{{label}}</strong>
+        <i class="fa fa-2x fa-caret-left ninja-menu-active-indicator"
+           ng-if="isActive() && !isItemHorizontal()"></i>
+    </div>
+
+</li>

@@ -1,0 +1,16 @@
+<!-- menu items, had to manually add inline block since ng blocks transcludes -->
+<ul class="ninja-menu" ng-transclude style="display: inline-block"
+    ng-class="{'pull-left': isHorizontal, 'ninja-menu-vertical': !isHorizontal}">
+
+</ul>
+
+<!-- vert/horiz button -->
+<a class="btn ninja-menu-layout-button" ng-show="allowHorizontalToggle"
+   ng-click="toggleMenuOrientation()" ng-class="{'ninja-layout-button-horizontal': isHorizontal}">
+
+    <i class="fa" ng-class="{ 'fa-chevron-up': !isHorizontal, 'fa-chevron-left': isHorizontal }"></i>
+</a>
+<!-- menu button -->
+<div ng-show="menuOnButton" class="ninja-collapsed-menu" ng-class="{'pull-right': isMenuHorizontal}">
+    <button class="btn" ng-click="menuButtonClicked()"><i class="fa fa-bars"></i></button>
+</div>

@@ -1,0 +1,105 @@
+.ninja-title-bar
+	background-color #444444
+	padding 0 20px
+	border-bottom: 2px solid black
+	color whitesmoke
+	height 70px
+.ninja-title-area
+	text-align right
+	display inline-block
+.ninja-logo-title
+	margin-top 6px
+	font-size 22px
+.ninja-logo-subtitle
+	font-size 12px
+	margin-top -14px
+	color lightgrey
+.ninja-header-logo
+	width 48px
+	height 48px
+	display inline-block
+	margin-left 2%
+.ninja-header-logo-title
+	margin-left 2px
+	display inline-block
+	font-size 20px
+	font-family 'Segoe UI', Tahoma, sans-serif
+	font-weight 500
+.ninja-item-horizontal
+	display inline-block
+	width 168px !important
+	margin-left 20px
+	margin-top 2px
+	line-height 1.5em !important
+.ninja-noselect
+	-webkit-touch-callout none
+	-webkit-user-select none
+	-moz-user-select none
+	-moz-user-callout none
+	user-select none
+	user-callout none
+	padding-top 16px
+	strong
+		&:hover
+			border-bottom 2px solid #555555
+.ninja-menu-icon
+	margin-right 10px
+.ninja-menu-active-indicator
+	float right
+	color #163547
+	margin-right 0
+	display inline-block
+.ninja-menu
+	list-style-type none
+	vertical-align top
+	li
+		line-height 3em
+		cursor pointer
+.ninja-menu-vertical
+	width 200px
+.ninja-menu-layout-button
+	margin-top 0
+	padding 2px 8px
+	color rgb(140,140,140)
+	border solid 1px rgb(221, 221, 221)
+	border-radius 0px
+.ninja-layout-button-horizontal
+	display inline-block
+.ninja-menu-area
+	background-color whitesmoke
+	padding-left 0
+	color #8c8c8c
+.ninja-menu-area-vertical
+	width 200px
+	min-height 100vh
+	padding-top 30px
+	z-index 30 !important
+	background-color rgba(245,245,245,0.7)
+.ninja-collapsed-menu
+	display inline-block
+	margin-top 0
+	top 0
+	right 0
+	button.btn
+		width 28px
+		height 26px
+		padding 2px 8px
+		i.fa.fa-bars
+			padding align-content
+.ninja-collapsed-menu-off
+	button.btn
+		width 28px
+		height 26px
+		padding 2px 8px
+		border-radius 0
+		//background-color transparent
+
+
+
+
+
+
+
+
+
+

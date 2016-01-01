@@ -1,0 +1,9 @@
+{
+  "firebase":"ninjaposts",
+  "public":"www",
+  "ignore": [
+    "**/node_module/**",
+    "firebase.json",
+    "**/.*"
+  ]
+}

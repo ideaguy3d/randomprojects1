@@ -1,0 +1,108 @@
+.content {
+    margin-top: 50px;
+}
+
+.undecorated-link:hover {
+    text-decoration: none;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+.ng-invalid.ng-dirty {
+    border-color: #FA787E;
+}
+
+.ng-valid.ng-dirty {
+    border-color: #78FA89;
+}
+
+.browsehappy.jumbotron.hide,
+body.ng-cloak {
+    display: block;
+}
+
+.j-top{
+    background:whitesmoke url("loadAnim1.svg") no-repeat;
+    background-size: cover;
+    height: 768px;
+    width: 100%;
+    color: whitesmoke;
+}
+
+.j-listitem {
+	text-decoration: none;
+    border-radius: 4px;
+    margin: 20px 20px;
+    background-color: white;
+    list-style-type: none;
+    opacity: .7;
+    z-index: 10;
+}
+.j-listitem:hover {
+    opacity: 1.0;
+}
+
+
+.j-anchor {
+    padding: 10px 10px;
+}
+
+.j-landing {
+    padding-top: 90px;
+}
+
+
+/**parallax scrolling CSS*/
+#ninjaBG {
+    background: #fff url('pureSVGninjaBG.svg') top left;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 2000px;
+    z-index: -1;
+}
+
+#publisher-details {
+    z-index: 2;
+    position: relative;
+    color: whitesmoke;
+}
+
+#publisher-details2 {
+    z-index: 2;
+    position: relative;
+    color: whitesmoke;
+}
+
+#content {
+    /*color: #888;*/
+    position: relative;
+    text-align: center;
+    /*width: 1080px;*/
+    margin: 0 auto;
+    margin-left: 2px
+    z-index: 0;
+    padding-left: 140px;
+}
+
+#content article {
+    margin: 50px 0;
+    padding: 20px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+<section id="ninjaBG"></section>
+
+<!-- this template gives more details about publishers game after a user
+    has clicked on a publishers thumbnail from the homepage -->
+<div id="publisher-details" data-ng-init="InitPublisherData()" class="container">
+
+    <!-- General publisher info -->
+    <img class="thumbnail center-block" data-ng-src="{{databaseObject[urlPublisherParam].image_url}}"
+         style="margin-top:8%" alt="game publishers img"/>
+
+    <div class="center-text">
+        <h1 class="pull-right">
+            <strong>{{publisher}}</strong>
+        </h1>
+    </div>
+    <h2>Publisher Score: {{databaseObject[urlPublisherParam].average_user_score | number:2}}</h2>
+
+    <p>... as rated by the Ninja's!
+        <small><i>a.k.a The Game Players</i></small>
+        ^_^
+    </p>
+
+    <hr/>
+
+    <h4 class="text-center">
+        Overall Average for the games ={{(gamesArray[0].game_rating+gamesArray[1].game_rating+gamesArray[2].game_rating)/3}}
+    </h4>
+
+    <!-- Details about publishers Game -->
+    <div class="row">
+        <h4 class="col-md-2">Sort Games:</h4> <!-- option to sort or query -->
+        <select ng-model="sortgames" class="input-lg col-md-4" style="color: #435D65">
+            <option selected value="name">Name of Game</option>
+            <option value="-votes">Ninja Votes</option>
+            <option value="-release_year">Newest</option>
+            <option value="release_year">Oldest</option>
+        </select>
+        <select ng-model="difficulty" class="input-lg col-md-4 col-md-offset-1" style="color: #435D65">
+            <option selected value="">All</option>
+            <option value="hard">Hard</option>
+            <option value="normal">Normal</option>
+            <option value="easy">Easy</option>
+        </select>
+    </div>
+    <ul>
+        <li ng-repeat="game in gamesArray | filter:difficulty | orderBy:sortgames" class="row j-session game-listitem">
+
+            <vote-widget data-ng-model="game.votes" voteup="voteUp(game)" votedown="voteDown(game)" count="game.votes" class="col-md-6 voting-widget"></vote-widget>
+
+            <collapsible title="{{game.name}}" class="col-md-6">
+                <h3>Average Ninja Rating: {{game.game_rating}}</h3>
+                <h6 class="pull-right">Release Year: {{game.release_year}}</h6>
+                <h5>Difficulty: This game was <strong>{{game.difficulty}}</strong> to play.</h5>
+
+                <hr/>
+
+                <h4>~Editor Review of {{game.name}}~</h4>
+                <p>{{game.editor_review}}</p>
+            </collapsible>
+        </li>
+    </ul>
+
+</div><!-- end of the container class -->
+<script type="text/javascript">
+    new WOW().init();
+</script>

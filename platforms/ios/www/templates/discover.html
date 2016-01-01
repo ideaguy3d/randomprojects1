@@ -1,0 +1,49 @@
+<ion-view view-title="Discover" class="discover-page">
+    <ion-content scroll="false">
+        <div class="list card current-song"
+             ng-class="{skipped: currentSong.rated == false, favorited: currentSong.rated == true}"
+                ng-show="currentSong && !currentSong.hide">
+
+            <div class="item item-image"><!-- item-avatar -->
+                <img ng-src="{{currentSong.image_large}}">
+            </div>
+
+            <div class="item"><!-- item-body -->
+                <h2>
+                    {{currentSong.title}}<span ng-hide="currentSong.loaded"><i class="ion-loading-c"></i></span>
+                </h2>
+                <p>{{currentSong.artist}}</p>
+            </div>
+
+            <!-- border beneath img for "favorite" & "skip" buttons -->
+            <div class="item tabs tabs-secondary tabs-icon-left">
+                <a class="tab-item" ng-click="sendFeedback(false)">
+                    <i class="icon ion-close"></i>
+                    Skip
+                </a>
+                <a class="tab-item" ng-click="sendFeedback(true)">
+                    <i class="icon ion-heart"></i>
+                    Favorite
+                </a>
+            </div>
+
+            <div class="img-lookahead">
+                <img ng-src="{{ nextAlbumImg() }}" alt="img"/>
+
+                <p>next album</p>
+                <h3>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consectetur deleniti numquam
+                    quod sint temporibus veritatis, voluptatem? Accusamus adipisci aliquid autem delectus, dolorem
+                    error, esse inventore iusto molestias qui rerum!
+                </h3>
+            </div>
+        </div><!-- end of .list.card.current-song  -->
+
+        <!--
+        <div class="img-lookahead">
+            <img ng-src="{{ nextAlbumImg() }}" alt="img"/>
+            <p>next album</p>
+        </div>
+        -->
+    </ion-content>
+</ion-view>

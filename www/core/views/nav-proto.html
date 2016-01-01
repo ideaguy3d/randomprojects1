@@ -1,0 +1,23 @@
+<div class="container" ng-controller="HomeController">
+    <!-- part that shows up when screen gets small -->
+    <div class="navbar-header">
+        <button class="navbar-toggle">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">SwapServe</a>
+    </div>
+    <!-- regular nav -->
+    <nav class="collapse navbar-collapse" collapse="!isCollapsed" role="navigation">
+        <ul class="navbar navbar-nav">
+            <li>
+                <a href="#/{{ subitem.link }}" class="dropdown-toggle">
+                    <span></span>
+                    <b class="caret"></b>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>

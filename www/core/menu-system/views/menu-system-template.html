@@ -1,0 +1,18 @@
+<!-- menu that can be vert or horiz -->
+<div class="ninja-menu-area" ng-show="isMenuVisible"
+     ng-class="{'ninja-menu-area-vertical': !isMenuHorizontal,
+                    'ninja-menu-area-horizontal': isMenuHorizontal}">
+    <a href="#/">
+        <div class="ninja-header-logo">
+            <img ng-src={{ninja_icon}} alt="icon"/>
+        </div>
+        <span class="ninja-header-logo-title">SwapServe</span>
+    </a>
+    <!-- ninja menu options , had to manually add inline block since ng blocks transcludes-->
+    <div ng-transclude style="display: inline-block" ng-class="{'pull-right': isMenuHorizontal}"></div>
+</div>
+
+<!-- when menu isn't visible show this button to turn back on -->
+<div ng-hide="menuOffButton" class="ninja-collapsed-menu-off" ng-class="{'pull-right': isMenuHorizontal}">
+    <button class="btn" ng-click="menuOffButtonClicked()"><i class="fa fa-bars"></i></button>
+</div>

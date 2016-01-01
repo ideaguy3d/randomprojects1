@@ -1,0 +1,112 @@
+.j-listitem
+	background-image url(ninja_star.svg);
+	background-position 0 -100px
+	background-repeat no-repeat
+	background-size 100px 100px
+	transition all 200ms ease-out
+	&:hover
+		background-position left top
+.j-thumbnail
+	height 800px
+	padding 20px 20px
+	position relative
+	overflow hidden
+	transition all 200ms ease
+	h1
+		opacity 1
+		color #163547
+	p
+		opacity 1
+		color #163547
+	button
+		background-color lighten(#163547, 20%)
+		color whitesmoke
+		border-radius 2px
+		padding 2em 4em
+		//border-radius 4px
+		border 3px solid darken(#163547, 40%)
+		position relative
+		overflow hidden
+		z-index 4
+		transition all 300ms ease
+		span.btn-bg
+			position absolute
+			top -100%
+			left -100%
+			transition all 300ms ease
+			width 100%
+			height 100%
+			background-color whitesmoke
+			z-index 2
+		span.btn-txt
+			position relative
+			z-index 5
+			transition all 300ms ease
+			font-weight 300
+		&:hover //on button hover, do this
+			span.btn-bg
+				left 0
+				top 0
+			span.btn-txt
+				color #163547
+				z-index 5
+				font-weight 500
+			border-color #435d65
+	>img
+		padding-top 10px
+	&:hover
+		text-decoration none
+		background-color rgba(245,245,245,0)
+.jh1
+	color whitesmoke
+.lead
+	color whitesmoke
+.voting-widget
+	height 492px
+	//padding 10px 10px
+	background-color whitesmoke
+	padding 10px 0px
+	color #435d65
+.vote-up
+	//padding-left 6px
+	cursor pointer
+	width 100%
+	height 128px
+	opacity .85
+	margin-bottom 52px
+	&:hover
+		opacity 1
+.vote-down
+	cursor pointer
+	width 100%
+	height 128px
+	opacity .85
+	margin-top 1px
+	&:hover
+		opacity 1
+.jwidth-total
+	width 100%
+	height 52px
+	background-color darkgrey
+	padding-left 40%
+	margin-top 10px
+	//padding-top 2px
+.j-text-total
+	font-weight 400
+	color whitesmoke
+	border 2px solid whitesmoke
+	display inline-block
+	border-radius 8px
+	//padding-bottom 2px
+	margin auto
+	margin-top 11px
+
+.j-session
+	border 4px solid #435D65
+.game-details
+	background-color whitesmoke
+.game-listitem
+	list-style-type none
+	margin-top 16px
+.bottom-area
+	background-color #274553

@@ -1,0 +1,52 @@
+div.list.list-inset {
+  background-color: whitesmoke;
+  color: $positive;
+  > div.item {
+    background-color: whitesmoke;
+    color: $positive;
+  }
+}
+
+//this'll style the tall bar on account tab
+.bar-positive.jbar {
+  height: 46%;
+  padding: 0;
+  //everything inside the ion-header-bar directive is being wrapped by .jheader-lg
+  > .jheader-lg {
+    position: relative;
+    color: rgba(255, 255, 255, 0);
+    width: inherit;
+    background-color: $royal;
+    > * {
+      background-color: rgba(255, 255, 255, 0);
+    }
+    //1st wrapped descendant
+    > div.row {
+      color: whitesmoke;
+      a {
+        background-color: rgba(255, 255, 255, 0);
+        border-color: transparent;
+      }
+    }
+
+    //2nd wrapped descendant
+    > div.tabs {
+      height: 56px;
+      //children
+      > a i {color: $positive;}
+      > a.tab-item {
+        small, p {
+          color: whitesmoke;
+        }
+      }
+    }
+
+  }//-> end of "> .jheader-lg"
+}
+
+
+
+//.bar-calm {
+//  margin-top:33%;
+//  width: 100%;
+//}

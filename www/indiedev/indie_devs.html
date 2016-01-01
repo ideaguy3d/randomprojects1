@@ -1,0 +1,75 @@
+<section id="ninjaBG"></section><!-- bg for parallax effect -->
+
+<div class="container" style="color: whitesmoke">
+    <h1 style="margin-top:70px">Here is a list of Indie Devs and their games !</h1>
+
+    <a ui-sref="indie_devs.posts" class="btn btn-lg btn-primary">Show Posts</a>
+    <ui-view></ui-view>
+
+    <br/><br/><hr/><hr/>
+
+    <div id="ngtodoapp">
+        <h2>Todo</h2>
+        <div ng-controller="TodoListController as todoList">
+            <span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span>
+            [<a href="" ng-click="todoList.archive()">archive</a>]
+            <ul class="unstyled">
+                <li ng-repeat="todo in todoList.todos">
+                    <input type="checkbox" ng-model="todo.done">
+                    <span class="done-{{todo.done}}">{{todo.text}}</span>
+                </li>
+            </ul>
+            <form ng-submit="todoList.addTodo()">
+                <input type="text" ng-model="todoList.todoText"  size="30"
+                       placeholder="add new todo here">
+                <input class="btn-primary" type="submit" value="add">
+            </form>
+        </div>
+    </div>
+
+    <br/><br/>
+
+    <ul>
+        <li>
+            instance prac:
+        </li>
+
+        <li> {{hws}} ----------- {{hwf}}</li>
+
+        <li>hf1; hf2; = {{hwCtrl.zhelloFn; hf2;}}</li>
+
+        <li>hf1+hwf+hf3 = {{hwCtrl.zhelloFn + hwf + hf3;}}</li>
+
+        <li>hwCtrl.zhelloFn + hf2 = {{hwCtrl.zhelloFn+hf2}}</li>
+
+        <li>{{hwCtrl.hwCombined}}</li>
+
+        <li>5) top secret studio = {{hwCtrl.accessPrivateFn}}</li>
+
+        <li>{{hwCtrl.zhelloFn.zname;}}</li>
+
+    </ul>
+
+    <h2>Indie Studio's Editor Reviews!</h2>
+    <br/>
+    <h4>Gamma Studio</h4>
+    <p>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolor explicabo, laudantium magnam nesciunt reiciendis similique tempore vitae voluptate? A, aliquid cumque exercitationem nam nemo neque nobis odit quidem totam.</span>
+        <span>Amet asperiores consequuntur facere facilis id impedit ipsum laudantium neque nisi non, porro quo rem, sed. Accusantium ad debitis exercitationem iure molestias nesciunt nisi recusandae similique suscipit vero? Illum, tempore!</span>
+        <span>Alias architecto atque consequatur deserunt dolore dolores eligendi error esse eum, eveniet explicabo fugit illum ipsam magni, minima minus molestias non perferendis porro provident quibusdam quos sint sit tempore ullam?</span>
+    </p>
+    <br/><br/>
+    <h4>Epsilon Studio</h4>
+    <p>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolor explicabo, laudantium magnam nesciunt reiciendis similique tempore vitae voluptate? A, aliquid cumque exercitationem nam nemo neque nobis odit quidem totam.</span>
+        <span>Amet asperiores consequuntur facere facilis id impedit ipsum laudantium neque nisi non, porro quo rem, sed. Accusantium ad debitis exercitationem iure molestias nesciunt nisi recusandae similique suscipit vero? Illum, tempore!</span>
+        <span>Alias architecto atque consequatur deserunt dolore dolores eligendi error esse eum, eveniet explicabo fugit illum ipsam magni, minima minus molestias non perferendis porro provident quibusdam quos sint sit tempore ullam?</span>
+    </p>
+    <br/><br/>
+    <h4>Theta Studio</h4>
+    <p>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolor explicabo, laudantium magnam nesciunt reiciendis similique tempore vitae voluptate? A, aliquid cumque exercitationem nam nemo neque nobis odit quidem totam.</span>
+        <span>Amet asperiores consequuntur facere facilis id impedit ipsum laudantium neque nisi non, porro quo rem, sed. Accusantium ad debitis exercitationem iure molestias nesciunt nisi recusandae similique suscipit vero? Illum, tempore!</span>
+        <span>Alias architecto atque consequatur deserunt dolore dolores eligendi error esse eum, eveniet explicabo fugit illum ipsam magni, minima minus molestias non perferendis porro provident quibusdam quos sint sit tempore ullam?</span>
+    </p>
+</div>

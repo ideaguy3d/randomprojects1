@@ -1,0 +1,54 @@
+<section id="ninjaBG"></section><!-- bg for parallax effect -->
+
+<section id="content" class="container-fluid" data-ng-controller="HomeController">
+    <!-- SVG test --
+    <div style="width: 400px; height: 400px" class="jSvg">
+
+        <object data="" type="">
+            <embed src="svg/loadAnim1.svg" type=""/>
+        </object>
+
+        <object data="" type="">
+            <embed src="svg/icon-magnify.svg" type=""/>
+        </object>
+
+        <object data="" type="">
+            <embed src="svg/icon-list.svg" type=""/>
+        </object>
+    </div>
+    -->
+
+    <!-- top landing portion -->
+    <article class="text-center row"><!-- j-top used to be here -->
+        <div class="j-landing">
+            <div class="row">
+                <div class="wow bounceInLeft">
+                    <h1 class="col-md-10 col-sm-9 text-center jh1 " style="margin: auto auto">
+                        Welcome to <strong>Ninja <i>Game Publishers</i> Review</strong>!
+                    </h1>
+                </div>
+            </div>
+            <div class="row text-center">
+                <p class="lead wow rotateIn">
+                    <small>Where you, the Game Player (aka The Ninja), rate publishers by rating&reviewing their
+                        games.
+                    </small>
+                </p>
+            </div>
+        </div>
+    </article>
+
+    <!-- now start pulling data for thumbnail list -->
+    <article>
+        <ul class="thumbnails">
+            <li data-ng-repeat="publisher in game_publishers"
+                class="col-md-3 col-sm-3 xs-col-3 j-listitem">
+                <publisher-thumbnail publisher="publisher"></publisher-thumbnail>
+            </li>
+        </ul>
+    </article>
+</section><!-- end of the HomeController Section -->
+
+<script type="text/javascript">
+    new WOW().init();
+</script>

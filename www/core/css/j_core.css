@@ -1,0 +1,133 @@
+.j-listitem {
+  background-image: url("ninja_star.svg");
+  background-position: 0 -100px;
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  transition: all 200ms ease-out;
+}
+.j-listitem:hover {
+  background-position: left top;
+}
+.j-thumbnail {
+  height: 800px;
+  padding: 20px 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all 200ms ease;
+}
+.j-thumbnail h1 {
+  opacity: 1;
+  color: #163547;
+}
+.j-thumbnail p {
+  opacity: 1;
+  color: #163547;
+}
+.j-thumbnail button {
+  background-color: #2a6587;
+  color: #f5f5f5;
+  border-radius: 2px;
+  padding: 2em 4em;
+  border: 3px solid #0d202b;
+  position: relative;
+  overflow: hidden;
+  z-index: 4;
+  transition: all 300ms ease;
+}
+.j-thumbnail button span.btn-bg {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  transition: all 300ms ease;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  z-index: 2;
+}
+.j-thumbnail button span.btn-txt {
+  position: relative;
+  z-index: 5;
+  transition: all 300ms ease;
+  font-weight: 300;
+}
+.j-thumbnail button:hover {
+  border-color: #435d65;
+}
+.j-thumbnail button:hover span.btn-bg {
+  left: 0;
+  top: 0;
+}
+.j-thumbnail button:hover span.btn-txt {
+  color: #163547;
+  z-index: 5;
+  font-weight: 500;
+}
+.j-thumbnail >img {
+  padding-top: 10px;
+}
+.j-thumbnail:hover {
+  text-decoration: none;
+  background-color: rgba(245,245,245,0);
+}
+.jh1 {
+  color: #f5f5f5;
+}
+.lead {
+  color: #f5f5f5;
+}
+.voting-widget {
+  height: 492px;
+  background-color: #f5f5f5;
+  padding: 10px 0px;
+  color: #435d65;
+}
+.vote-up {
+  cursor: pointer;
+  width: 100%;
+  height: 128px;
+  opacity: 0.85;
+  margin-bottom: 52px;
+}
+.vote-up:hover {
+  opacity: 1;
+}
+.vote-down {
+  cursor: pointer;
+  width: 100%;
+  height: 128px;
+  opacity: 0.85;
+  margin-top: 1px;
+}
+.vote-down:hover {
+  opacity: 1;
+}
+.jwidth-total {
+  width: 100%;
+  height: 52px;
+  background-color: #a9a9a9;
+  padding-left: 40%;
+  margin-top: 10px;
+}
+.j-text-total {
+  font-weight: 400;
+  color: #f5f5f5;
+  border: 2px solid #f5f5f5;
+  display: inline-block;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 11px;
+}
+.j-session {
+  border: 4px solid #435d65;
+}
+.game-details {
+  background-color: #f5f5f5;
+}
+.game-listitem {
+  list-style-type: none;
+  margin-top: 16px;
+}
+.bottom-area {
+  background-color: #274553;
+  padding: 10px 0 10px 0;
+}

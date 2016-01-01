@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>Ninja Publishers Review</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="styles/animatecss.css"/>
+  <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.css"/>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="core/css/core.css"/>
+  <link rel="stylesheet" href="core/css/j_core.css"/>
+  <link rel="stylesheet" href="core/css/jmenu-system.css"/>
+  <link rel="stylesheet" href="subnav/subnav.css"/>
+  <!-- endbuild -->
+
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
+</head>
+<body ng-app="ngfireApp">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<header data-ng-include="'core/views/header.client.view.html'" ng-controller="HeaderController"
+        class="navbar navbar-fixed-top" ng-style="style4vert"></header>
+<!--
+<div ng-include="'subnav/subnav.html'" style="margin-left: 20%; margin-top: 4%; width: 70%"></div>
+-->
+
+<div class="container">
+  <h1>This is GOING to become my new Portfolio site... How exciting ^_^</h1>
+
+  <h2 style="margin-top: 12%">Mobile App Prototype</h2>
+
+  <p>please swipe, drag, and push using mouse</p>
+
+  <div style="border: 2px black solid; display: inline-block; margin: 10px 10px">
+    <iframe src="index_ionic_sass.html" frameborder="0" width="300px" height="500px"></iframe>
+  </div>
+</div>
+
+<!--
+<ui-view></ui-view>
+-->
+<div class="container-fluid" style="padding:0; color: whitesmoke">
+  <div class="bottom-area text-center">
+    <h3>SwapServe is a Start up Company by
+      <a href="https://github.com/nbr1ninrsan2" target="_blank">Julius Alvarado</a> &
+      <a href="http://designbook.com">Dameon Greene</a>
+    </h3>
+    <h6>version 0.0.1</h6>
+
+    <div class="row">
+      <p class="col-md-1 col-md-offset-4">Our Software is Built with:</p>
+      <a class="col-md-2 col-sm-2" href="http://angularjs.org" target="_blank">
+        <img class="img-responsive" src="https://angularjs.org/img/AngularJS-large.png" alt="angular.js"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+<script>
+  !function(A, n, g, u, l, a, r){
+    A.GoogleAnalyticsObject = l, A[l] = A[l] || function(){
+        (A[l].q = A[l].q || []).push(arguments)
+      }, A[l].l = +new Date, a = n.createElement(g),
+      r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+  }(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-XXXXX-X');
+  ga('send', 'pageview');
+</script>
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/firebase/firebase.js"></script>
+<script src="bower_components/angularfire/dist/angularfire.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-ui-utils/ui-utils.min.js"></script>
+<script src="bower_components/angular-md5/angular-md5.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+<script src="bower_components/angular-touch/angular-touch.min.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="bower_components/angular-resource/angular-resource.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/wow/wow.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="app.js"></script>
+<script src="auth/auth.service.js"></script>
+<script src="auth/auth.controller.js"></script>
+<script src="users/profile.controller.js"></script>
+<script src="users/users.service.js"></script>
+<script src="channels/channels.controller.js"></script>
+<script src="channels/channels.service.js"></script>
+<script src="channels/messages.controller.js"></script>
+<script src="channels/messages.service.js"></script>
+<script src="core/controllers/header.client.controller.js"></script>
+<script src="core/controllers/home.client.controller.js"></script>
+<script src="core/directives/collapsible.client.directive.js"></script>
+<script src="core/directives/home-thumbnails.client.directive.js"></script>
+<script src="core/directives/votewidget.client.directive.js"></script>
+<script src="menu-system/controllers/ninja-menu.client.controller.js"></script>
+<script src="menu-system/directives/menu-system.client.directive.js"></script>
+<script src="menu-system/directives/ninja-menu.client.directive.js"></script>
+<script src="menu-system/directives/ninja-menu-group.client.directive.js"></script>
+<script src="menu-system/directives/ninja-menu-item.client.directive.js"></script>
+<script src="indiedev/jhafactoryservice.js"></script>
+<script src="posts/posts.controller.js"></script>
+<script src="posts/post.service.js"></script>
+<script src="posts/postDetailsCtrl.js"></script>
+<script src="subnav/subnavCtrl.js"></script>
+<script src="subnav/url-filter.js"></script>
+<script src="subnav/post-auth.js"></script>
+<script src="posts/postAuthCtrl.js"></script>
+
+<script src="core/jquery/jparallax.js"></script>
+<!-- endbuild -->
+</body>
+</html>
